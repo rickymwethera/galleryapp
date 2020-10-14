@@ -1,0 +1,29 @@
+<style>
+
+</style>
+<nav class="navbar  navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Gallery App</a>
+        <a class="navbar-brand text-center" href="{% url 'welcome' %}">Home</a>
+      
+      </div>
+      
+      <!-- Adding a search form  -->
+      <div class="col-sm-4 col-md-4 navbar-right">
+    
+
+        <form class="navbar-form" role="search" action="{% url 'search_results' %}">
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search image category" name="image">
+            <div class="input-group-btn">
+              <button class="btn data" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+      <!-- search form end -->
+    </div>
+  </nav>
